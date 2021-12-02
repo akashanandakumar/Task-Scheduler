@@ -1,0 +1,55 @@
+body {
+    background-color: #c7d7eb;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container, .exist {
+    margin: 20px;
+}
+
+
+.container h2 , .exist h2 {
+    color:green;
+
+}
+.new label {
+    font-size: 20px;
+}
+
+.new input {
+    height: 25px;
+    
+}
+
+.new input,textarea {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+#btn {
+    color :white;
+    background-color: black;
+    height: 35px;
+    width: 70px;
+}
+
+#btn:hover {
+    background-color: chartreuse;
+    color: black;
+    cursor: pointer;
+}
+
+#detail div  {
+    background-color: #2e3947;
+    width: 300px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    margin: 10px;
+    color: rgb(223, 231, 223);
+    box-shadow: 5px 10px #5b708b;
+}
+   
+

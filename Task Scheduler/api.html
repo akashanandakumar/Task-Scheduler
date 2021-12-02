@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn" onclick="func()"  style="width: 50px; height: 50px; background-color: aqua;"> ADD</button>
+    <h3> ID: <span id="id"> </span></h3>
+    <h3> TITLE: <span id="title"> </span></h3>
+    <h3> COMPLETED: <span id="complete"> </span></h3>
+
+   
+
+    <script>
+
+
+        async function func() {
+            try(){
+            const response = await fetch('http://jsonplaceholder.typicode.com/todos/');
+            const data = await response.json();
+            document.getElementById("id").innerText = data.idd;
+            document.getElementById("title").innerText = data.title;
+            document.getElementById("complete").innerText = data.completed;
+            }
+            catch(error =>){
+                console.log("error");
+            }
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
